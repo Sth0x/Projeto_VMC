@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Projeto_VMC.Data.Mapeamento;
 using Projeto_VMC.Models;
 
 public class BancoContexto : DbContext
