@@ -1,5 +1,5 @@
-﻿using Projeto_VMC.Data.Repositorio.Interfaces;
-using Projeto_VMC.Models;
+﻿using Projeto_VMC.Models;
+using Projeto_VMC.
 
 public class AlunoRepositorio : IAlunoRepositorio
 {
