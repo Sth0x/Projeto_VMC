@@ -5,15 +5,19 @@ namespace Projeto_VMC.Controllers
 {
     public class AlunoController : Controller
     {
-        private readonly IAlunoRepositorio _AlunoRepositorio;
-        public AlunoController(AlunoRepositorio alunoRepositorio)
+        private readonly IAlunoRepositorio _alunoRepositorio;
+        public AlunoController(IAlunoRepositorio alunoRepositorio)
         {
-            _AlunoRepositorio = alunoRepositorio;   
+            _alunoRepositorio = alunoRepositorio;
         }
         public IActionResult Index()
         {
-            var aluno = _AlunoRepositorio.BuscarAlunos();
+            var aluno = _alunoRepositorio.BuscarAlunos();
             return View(aluno);
+        }
+        public IActionResult AdicionarAluno()
+        {
+            return View();
         }
     }
 }
